@@ -18,8 +18,8 @@ print 'cluster centers:\n', codes
 
 vecs, dist = scipy.cluster.vq.vq(ar, codes)         # assign codes
 counts, bins = scipy.histogram(vecs, len(codes))    # count occurrences
-index_max = scipy.argmax(counts)                    # find most frequent
+index_max = scipy.argmax(counts)                    # find max frequency
 peak = codes[index_max].astype(int)
 
 color = ''.join(chr(c) for c in peak).encode('hex')
-print 'most frequent is %s (#%s)' % (peak, color)
+print 'the most common color is %s (#%s)' % (peak, color)
