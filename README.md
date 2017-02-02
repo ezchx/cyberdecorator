@@ -1,4 +1,4 @@
 # cyberdecorator
-Find the most common colors in an image file using SciPy and K-Means. The number of colors selected corresponds to the number of clusters in cyberdecorator.py
+Find the most common colors in an image file using SciPy and K-Means. The cluster variable in cyberdecorator.py determines the number of colors selected from the image.
 
 ![](https://github.com/ezchx/cyberdecorator/blob/master/cd_demo_screen.jpg)
