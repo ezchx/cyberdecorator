@@ -1,28 +1,5 @@
 <?
 
-$target_dir = "uploads/user_file.jpg";
-$uploadOk = 1;
-$imageFileType = pathinfo(basename($_FILES["fileToUpload"]["name"]),PATHINFO_EXTENSION);
-$image_info = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-$image_width = $image_info[0];
-$image_height = $image_info[1];
-$image_size = $_FILES["fileToUpload"]["size"];
-
-if($image_width < $image_height) {
-  $height = "auto";
-  $width = "100%";
-} else {
-  $height = "100%";
-  $width = "auto";
-}
-
-// Check file format
-if($imageFileType != "jpg" && $imageFileType != "jpeg" ) {
-    $error = "Sorry, only JPG files are allowed";
-    $uploadOk = 0;
-}
-<?
-
 if($_SERVER['REQUEST_METHOD'] == 'POST') {$upload_try = 1;}
 $target_dir = "uploads/user_file.jpg";
 $uploadOk = 1;
