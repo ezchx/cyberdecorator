@@ -16,4 +16,4 @@ ar = ar.reshape(scipy.product(shape[:2]), shape[2])
 codes, dist = scipy.cluster.vq.kmeans(ar.astype(float), NUM_CLUSTERS)
 
 codes_2 = codes.tolist()
-print json.dumps(codes_2)
+print json.dumps(codes_2) 
